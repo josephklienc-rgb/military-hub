@@ -723,13 +723,14 @@ useEffect(() => {
           ========================= */}
 
 <Navbar
-  cartCount={cartCount}
-  wishlistCount={wishlist.length}
-  onCartClick={() => setCartOpen(true)}
-  onWishlistClick={() => setWishlistOpen(true)}
-  onOrdersClick={() => setOrdersOpen(true)}
-  onAccountClick={() => setAccountOpen(true)}
-  onLogout={handleLogout}
+userEmail={userEmail}
+cartCount={cartCount}
+wishlistCount={wishlist.length}
+onCartClick={() => setCartOpen(true)}
+onWishlistClick={() => setWishlistOpen(true)}
+onOrdersClick={() => setOrdersOpen(true)}
+onAccountClick={() => setAccountOpen(true)}
+onLogout={handleLogout}
 />
 
       {/* =========================
